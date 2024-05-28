@@ -1,14 +1,7 @@
 import Image from 'next/image'
+import type { TranslationProps } from '@/types/translation'
 import logoImg from '../../../../public/logo.webp'
 
-const imageSize = 180
-
-export const Logo = () => (
-  <Image
-    priority
-    width={imageSize}
-    height={imageSize}
-    src={logoImg}
-    alt='logo noite no cerrado'
-  />
+export const Logo = ({ dictionary }: TranslationProps) => (
+  <Image priority src={logoImg} alt={dictionary.navMenu.logoImageAlt} />
 )
