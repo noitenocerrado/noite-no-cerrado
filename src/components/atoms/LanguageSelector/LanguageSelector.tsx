@@ -1,43 +1,39 @@
 'use client'
 
 import { usePathname, useRouter } from 'next/navigation'
-import { ChangeEvent, useState } from 'react'
+import { useState } from 'react'
 
 export const LanguageSelector = () => {
   const router = useRouter()
 
   const pathname = usePathname()
 
-  const [language, setLanguage] = useState(pathname.replace('/', ''))
+  const currentLanguage = pathname.replace('/', '')
 
-  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const selectedLanguage = e.target.value
-    setLanguage(selectedLanguage)
-    router.push(selectedLanguage === 'pt' ? '/pt' : '/en')
+  const [checked, setChecked] = useState(currentLanguage !== 'pt')
+
+  const toggleLanguage = () => {
+    const selectedLanguage = checked ? 'pt' : 'en'
+    setChecked(!checked)
+    router.push(`/${selectedLanguage}`)
   }
 
   return (
-    <li className='relative group'>
-      <div className='relative inline-block text-left'>
-        <select
-          value={language}
-          onChange={handleLanguageChange}
-          className='appearance-none cursor-pointer bg-black text-white text-sm border border-gray-600 p-2 rounded-md hover:border-gray-400 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105 pr-8'
-        >
-          <option value='pt'>Português (Brasil)</option>
-          <option value='en'>English</option>
-        </select>
-
-        <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white'>
-          <svg
-            className='h-4 w-4 fill-current'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 20 20'
-          >
-            <path d='M7 10l5 5 5-5H7z' />
-          </svg>
-        </div>
+    <label className='flex cursor-pointer select-none items-center'>
+      <span className='mr-1 text-xl'>🇧🇷</span>
+      <div className='relative'>
+        <input
+          type='checkbox'
+          checked={checked}
+          onChange={toggleLanguage}
+          className='peer sr-only'
+        />
+        <div className='block h-5 w-8 rounded-full bg-gray-700' />
+        <div
+          className={`dot absolute left-1 top-1 h-3 w-3 rounded-full bg-white transition peer-checked:translate-x-full`}
+        />
       </div>
-    </li>
+      <span className='ml-1 text-xl'>🇺🇸</span>
+    </label>
   )
 }
