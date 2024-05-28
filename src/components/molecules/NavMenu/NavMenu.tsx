@@ -1,35 +1,49 @@
-'use client'
+import { LanguageSelector, Logo } from '../../atoms'
+
+const navItemLabelsLeftGroup = [
+  { label: 'O Projeto', href: '#project' },
+  { label: 'Fotos', href: '#photos' },
+]
+
+const navItemLabelsRightGroup = [
+  { label: 'Dados', href: '#data' },
+  { label: 'Contato', href: '#contact' },
+]
 
 interface NavItemProps {
-  title: string
-
-  onClick: (title: string) => void
+  label: string
+  href: string
 }
 
-const NavItem = ({ title, onClick }: NavItemProps) => (
-  <li className="h-[40px] flex items-center justify-center p-8 cursor-pointer" onClick={() => onClick(title)}>
-    {title}
+const NavItem = ({ label, href }: NavItemProps) => (
+  <li className='relative group select-none'>
+    <a href={href} className='hover:text-gray-400 text-xl'>
+      {label}
+    </a>
+    <div className='absolute left-0 right-0 h-1 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out'></div>
   </li>
 )
 
-interface NavMenuProps {
-  onClickItem: (title: string) => void
-}
+export const NavMenu = () => (
+  <nav className='bg-black text-white py-4'>
+    <div className='container mx-auto flex justify-between items-center'>
+      <ul className='flex space-x-4 flex-1 justify-evenly items-center'>
+        {navItemLabelsLeftGroup.map(({ label, href }) => (
+          <NavItem key={label} label={label} href={href} />
+        ))}
+      </ul>
 
-export const NavMenu = ({ onClickItem }: NavMenuProps) => {
-  return (
-    <div className="px-4 container mx-auto">
-      <nav className="w-full rounded-lg bg-gray-700 text-white transition-transform">
-        <div className="w-full flex justify-center">
-          <ul className="w-full grid grid-cols-5 divide-x divide-[#69707C]">
-            <NavItem title="O Projeto" onClick={onClickItem} />
-            <NavItem title="Fotos" onClick={onClickItem} />
-            <NavItem title="Dados" onClick={onClickItem} />
-            <NavItem title="Specs" onClick={onClickItem} />
-            <NavItem title="Contato" onClick={onClickItem} />
-          </ul>
-        </div>
-      </nav>
+      <div className='flex items-center'>
+        <Logo />
+      </div>
+
+      <ul className='flex space-x-4 flex-1 justify-evenly items-center'>
+        {navItemLabelsRightGroup.map(({ label, href }) => (
+          <NavItem key={label} label={label} href={href} />
+        ))}
+
+        <LanguageSelector />
+      </ul>
     </div>
-  )
-}
+  </nav>
+)
