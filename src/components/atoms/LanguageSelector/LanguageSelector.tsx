@@ -28,7 +28,7 @@ export const LanguageSelector = () => {
           onChange={toggleLanguage}
           className='peer sr-only'
         />
-        <div className='block h-5 w-8 rounded-full bg-gray-700' />
+        <div className='block h-5 w-8 rounded-full bg-neutral-500' />
         <div
           className={`dot absolute left-1 top-1 h-3 w-3 rounded-full bg-white transition peer-checked:translate-x-full`}
         />
