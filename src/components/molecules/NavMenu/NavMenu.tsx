@@ -5,6 +5,7 @@ import { useScroll } from '@/hooks'
 import type { TranslationProps } from '@/types/translation'
 import { LanguageSelector, Logo } from '../../atoms'
 import bgStarsImg from '../../../../public/bg_stars.webp'
+import { useEffect, useState } from 'react'
 
 interface NavItemProps {
   label: string
@@ -22,6 +23,7 @@ const NavItem = ({ label, href }: NavItemProps) => (
 
 export const NavMenu = ({ dictionary }: TranslationProps) => {
   const { scrolled } = useScroll()
+  const [fadeIn, setFadeIn] = useState(false)
 
   const navItemLabelsLeftGroup = [
     { label: dictionary.navMenu.project, href: '#project' },
@@ -33,11 +35,15 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
     { label: dictionary.navMenu.contact, href: '#contact' },
   ]
 
+  useEffect(() => {
+    setFadeIn(true)
+  }, [])
+
   return (
     <nav
       className={`z-10 fixed w-full bg-black text-white ${
         scrolled ? 'py-2' : 'py-4'
-      } transition-all duration-300`}
+      } transition-all duration-300 ${fadeIn ? 'fade-in-left-to-right' : 'opacity-0'}`}
     >
       <div className='absolute z-10 inset-0 bg-gradient-to-l from-white/70 to-transparent pointer-events-none' />
 
