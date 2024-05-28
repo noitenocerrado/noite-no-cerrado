@@ -2,18 +2,9 @@
 
 import Image from 'next/image'
 import { useScroll } from '@/hooks'
+import type { TranslationProps } from '@/types/translation'
 import { LanguageSelector, Logo } from '../../atoms'
 import bgStarsImg from '../../../../public/bg_stars.webp'
-
-const navItemLabelsLeftGroup = [
-  { label: 'O Projeto', href: '#project' },
-  { label: 'Fotos', href: '#photos' },
-]
-
-const navItemLabelsRightGroup = [
-  { label: 'Dados', href: '#data' },
-  { label: 'Contato', href: '#contact' },
-]
 
 interface NavItemProps {
   label: string
@@ -29,8 +20,18 @@ const NavItem = ({ label, href }: NavItemProps) => (
   </li>
 )
 
-export const NavMenu = () => {
+export const NavMenu = ({ dictionary }: TranslationProps) => {
   const { scrolled } = useScroll()
+
+  const navItemLabelsLeftGroup = [
+    { label: dictionary.navMenu.project, href: '#project' },
+    { label: dictionary.navMenu.photos, href: '#photos' },
+  ]
+
+  const navItemLabelsRightGroup = [
+    { label: dictionary.navMenu.data, href: '#data' },
+    { label: dictionary.navMenu.contact, href: '#contact' },
+  ]
 
   return (
     <nav
@@ -52,10 +53,15 @@ export const NavMenu = () => {
         <Image
           priority
           src={bgStarsImg}
-          alt='Stars Background'
-          layout='fill'
-          objectFit='cover'
+          alt={dictionary.navMenu.bgImageAlt}
           className='pointer-events-none'
+          style={{
+            position: 'absolute',
+            height: '100%',
+            width: '100%',
+            inset: '0px',
+            objectFit: 'cover',
+          }}
         />
         <div className='absolute inset-0 bg-gradient-to-r from-transparent via-90% via-black/80 to-black pointer-events-none' />
       </div>
@@ -72,7 +78,7 @@ export const NavMenu = () => {
             scrolled ? 'h-10 w-10' : 'h-24 w-24 md:w-48 md:h-48'
           }`}
         >
-          <Logo />
+          <Logo dictionary={dictionary} />
         </div>
 
         <ul className='flex space-x-4 flex-1 justify-evenly items-center'>
