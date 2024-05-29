@@ -1,4 +1,4 @@
-import { NavMenu } from '@/components'
+import { MobileNavMenu, NavMenu } from '@/components'
 import { getDictionary } from '../../getDictionary'
 import { Locale } from '../../i18n-config'
 
@@ -11,8 +11,12 @@ export const Home = async ({
 
   return (
     <main className='flex flex-col gap-5 bg-zinc-950 text-white relative'>
-      <div className='mb-32 md:mb-56'>
+      <div className='hidden sm:block mb-32 md:mb-56'>
         <NavMenu dictionary={dictionary} />
+      </div>
+
+      <div className='sm:hidden'>
+        <MobileNavMenu dictionary={dictionary} />
       </div>
     </main>
   )
