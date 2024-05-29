@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Locale, i18n } from '../../i18n-config'
-import { getDictionary } from '../../getDictionary'
 import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -34,8 +33,6 @@ const RootLayout = async ({
   children: React.ReactNode
   params: { lang: Locale }
 }>) => {
-  const dictionary = await getDictionary(params.lang)
-
   return (
     <html lang={params.lang}>
       <body className={inter.className}>{children}</body>

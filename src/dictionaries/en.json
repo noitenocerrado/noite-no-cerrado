@@ -1,1 +1,10 @@
-{}
+{
+  "navMenu": {
+    "project": "The Project",
+    "photos": "Photos",
+    "data": "Data",
+    "contact": "Contact",
+    "bgImageAlt": "Background of stars fading behind diffuse artificial lighting",
+    "logoImageAlt": "Cerrado tree with stars above and artificial light in the background"
+  }
+}
