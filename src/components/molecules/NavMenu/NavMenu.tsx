@@ -1,25 +1,9 @@
 'use client'
 
-import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import { useScroll } from '@/hooks'
 import type { TranslationProps } from '@/types/translation'
-import { LanguageSelector, Logo } from '../../atoms'
-import bgStarsImg from '../../../../public/bg_stars.webp'
-import { useEffect, useState } from 'react'
-
-interface NavItemProps {
-  label: string
-  href: string
-}
-
-const NavItem = ({ label, href }: NavItemProps) => (
-  <li className='relative group select-none'>
-    <a href={href} className='hover:text-emerald-300 md:text-xl xs:text-xs'>
-      {label}
-    </a>
-    <div className='absolute left-0 right-0 h-1 bg-emerald-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out'></div>
-  </li>
-)
+import { LanguageSelector, Logo, NavBackground, NavItem } from '../../atoms'
 
 export const NavMenu = ({ dictionary }: TranslationProps) => {
   const { scrolled } = useScroll()
@@ -43,9 +27,11 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
     <nav
       className={`z-10 fixed w-full bg-black text-white ${
         scrolled ? 'py-2' : 'py-4'
-      } transition-all duration-300 ${fadeIn ? 'fade-in-left-to-right' : 'opacity-0'}`}
+      } transition-all duration-300 ${
+        fadeIn ? 'fade-in-left-to-right' : 'opacity-0'
+      }`}
     >
-      <div className='absolute z-10 inset-0 bg-black/10 pointer-events-none' />
+      <NavBackground dictionary={dictionary} />
 
       <div
         className={`absolute z-20 top-2 right-4 transition-opacity duration-300 ${
@@ -55,23 +41,7 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
         <LanguageSelector />
       </div>
 
-      <div className='absolute inset-y-0 left-0 w-full h-full'>
-        <Image
-          priority
-          src={bgStarsImg}
-          alt={dictionary.navMenu.bgImageAlt}
-          className='pointer-events-none'
-          style={{
-            height: '100%',
-            width: '100%',
-            objectFit: 'cover',
-          }}
-        />
-        <div className='absolute inset-0 bg-gradient-radial from-transparent via-50% via-black/60 to-black pointer-events-none' />
-        <div className='absolute inset-0 bg-gradient-to-t from-zinc-950 from-10% via-20% via-transparent to-transparent to-90% pointer-events-none' />
-      </div>
-
-      <div className='container mt-2 mx-auto flex justify-between items-center relative z-10'>
+      <div className='container mx-auto flex justify-between items-center relative z-10'>
         <ul className='flex space-x-4 flex-1 justify-evenly items-center'>
           {navItemLabelsLeftGroup.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
