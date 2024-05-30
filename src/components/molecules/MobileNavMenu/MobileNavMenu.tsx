@@ -73,7 +73,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
               </div>
 
               <div className='mt-4 w-full flex justify-center'>
-                <SocialIcons />
+                <SocialIcons size='large'/>
               </div>
             </menu>
           </div>
