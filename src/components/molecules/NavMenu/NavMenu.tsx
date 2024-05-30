@@ -3,7 +3,13 @@
 import { useEffect, useState } from 'react'
 import { useScroll } from '@/hooks'
 import type { TranslationProps } from '@/types/translation'
-import { LanguageSelector, Logo, NavBackground, NavItem } from '../../atoms'
+import {
+  LanguageSelector,
+  Logo,
+  NavBackground,
+  NavItem,
+  SocialIcons,
+} from '../../atoms'
 
 export const NavMenu = ({ dictionary }: TranslationProps) => {
   const { scrolled } = useScroll()
@@ -25,7 +31,7 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
 
   return (
     <nav
-      className={`z-10 fixed w-full bg-black text-white ${
+      className={`z-10 pt-6 md:pt-4 fixed w-full bg-black text-white ${
         scrolled ? 'py-2' : 'py-4'
       } transition-all duration-300 ${
         fadeIn ? 'fade-in-left-to-right' : 'opacity-0'
@@ -34,10 +40,14 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
       <NavBackground dictionary={dictionary} />
 
       <div
-        className={`absolute z-20 top-2 right-4 transition-opacity duration-300 ${
+        className={`absolute flex justify-around z-20 top-2 right-4 transition-opacity duration-300 ${
           scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
+        <div className='mx-4'>
+          <SocialIcons />
+        </div>
+
         <LanguageSelector />
       </div>
 
