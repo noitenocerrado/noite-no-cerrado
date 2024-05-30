@@ -13,16 +13,15 @@ interface SocialIconsProps {
 export const SocialIcons = ({ size }: SocialIconsProps) => {
   let width = 20
   let height = 20
-  let gap = 4
+  const isLarge = size === 'large'
 
-  if (size === 'large') {
+  if (isLarge) {
     width = 40
     height = 40
-    gap = 10
   }
 
   return (
-    <div className={`flex gap-${gap} mt-1`}>
+    <div className={`flex ${isLarge ? 'gap-10' : 'gap-4'} mt-1`}>
       <Link href={instagramLink} target='_blank'>
         <Image alt='' src={instagramIcon} width={width} height={height} />
       </Link>
