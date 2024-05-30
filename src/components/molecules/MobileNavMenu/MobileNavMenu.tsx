@@ -1,7 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { LanguageSelector, Logo, NavBackground, NavItem } from '../../atoms'
+import {
+  LanguageSelector,
+  Logo,
+  NavBackground,
+  NavItem,
+  SocialIcons,
+} from '../../atoms'
 import type { TranslationProps } from '@/types/translation'
 
 export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
@@ -64,6 +70,10 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
                     <NavItem {...item} />
                   </div>
                 ))}
+              </div>
+
+              <div className='mt-4 w-full flex justify-center'>
+                <SocialIcons size='large'/>
               </div>
             </menu>
           </div>
