@@ -11,7 +11,7 @@ export const Home = async ({
 
   return (
     <main className='flex flex-col gap-5 bg-zinc-950 text-white relative'>
-      <div className='hidden sm:block mb-32 md:mb-56'>
+      <div className='hidden sm:block'>
         <NavMenu dictionary={dictionary} />
       </div>
 

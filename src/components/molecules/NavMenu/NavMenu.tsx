@@ -50,7 +50,7 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
 
         <div
           className={`flex items-center transition-all duration-300 ${
-            scrolled ? 'h-10 w-10' : 'h-24 w-24 md:w-48 md:h-48'
+            scrolled ? 'h-10 w-10' : 'h-20 w-20 md:w-28 md:h-28'
           }`}
         >
           <Logo dictionary={dictionary} />
