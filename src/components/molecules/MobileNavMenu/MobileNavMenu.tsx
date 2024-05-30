@@ -38,7 +38,9 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
           <Logo dictionary={dictionary} />
         </div>
 
-        <p className='z-10 flex-1 text-white text-center text-2xl pr-16'>Noite no Cerrado</p>
+        <p className='z-10 flex-1 text-white text-center text-2xl pr-16'>
+          {dictionary.navMenu.title}
+        </p>
 
         <NavBackground dictionary={dictionary} />
 

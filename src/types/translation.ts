@@ -7,6 +7,7 @@ export interface TranslationProps {
       contact: string
       bgImageAlt: string
       logoImageAlt: string
+      title: string
     }
   }
 }
