@@ -1,13 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { useScroll } from '@/hooks'
+import { useState } from 'react'
 import { LanguageSelector, Logo, NavBackground, NavItem } from '../../atoms'
 import type { TranslationProps } from '@/types/translation'
 
 export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
-  const { scrolled } = useScroll()
-  const [fadeIn, setFadeIn] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
@@ -16,10 +13,6 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
     { label: dictionary.navMenu.data, href: '#data' },
     { label: dictionary.navMenu.contact, href: '#contact' },
   ]
-
-  useEffect(() => {
-    setFadeIn(true)
-  }, [])
 
   const toggleMenu = () => {
     setIsOpen((state) => !state)
