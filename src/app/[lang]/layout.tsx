@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { Locale, i18n } from '../../i18n-config'
 import '../globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Noite no Cerrado',
@@ -35,7 +32,7 @@ const RootLayout = async ({
 }>) => {
   return (
     <html lang={params.lang}>
-      <body className={inter.className}>{children}</body>
+      <body className='font-body'>{children}</body>
     </html>
   )
 }
