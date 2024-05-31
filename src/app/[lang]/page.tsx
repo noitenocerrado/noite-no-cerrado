@@ -12,7 +12,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang)
 
   return (
-    <main className='flex flex-col gap-5 bg-zinc-950 text-white relative'>
+    <main className='flex flex-col gap-5 bg-black text-white relative'>
       <div className='hidden sm:block'>
         <NavMenu dictionary={dictionary} />
       </div>
