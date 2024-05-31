@@ -12,6 +12,9 @@ export interface TranslationProps {
     projectSection: {
       title: string
     }
+    photosSection: {
+      title: string
+    }
     aboutUs: {
       title: string
       collaborator1: {
