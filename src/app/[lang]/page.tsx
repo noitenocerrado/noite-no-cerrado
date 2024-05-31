@@ -1,9 +1,8 @@
-import { Footer, MobileNavMenu, NavMenu } from '@/components'
+import { AboutUsSection, Footer, MobileNavMenu, NavMenu } from '@/components'
 import { Locale } from '../../i18n-config'
 import { getDictionary } from '../../getDictionary'
-import { AboutUsSection } from '../../components/organisms'
 
-export const Home = async ({
+const Home = async ({
   params: { lang },
 }: {
   params: { lang: Locale }
