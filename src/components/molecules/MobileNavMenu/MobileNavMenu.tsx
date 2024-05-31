@@ -29,10 +29,10 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
       <nav className='fixed w-full flex justify-between items-center'>
         <button
           onClick={toggleMenu}
-          className={`absolute top-5 right-4 h-6 flex items-center`}
+          className={`absolute top-5 right-4 h-6 flex items-center cursor-pointer z-50`}
         >
           <span
-            className={`relative z-50 block h-[1px] w-7 bg-transparent content-[''] before:z-50 before:block before:h-full before:w-full before:bg-white before:transition-all before:duration-200 before:ease-out before:content-[''] after:block after:h-full after:w-full after:bg-white after:transition-all after:duration-200 after:ease-out after:content-[''] ${
+            className={`relative block h-[1px] w-7 bg-transparent content-[''] before:z-50 before:block before:h-full before:w-full before:bg-white before:transition-all before:duration-200 before:ease-out before:content-[''] after:block after:h-full after:w-full after:bg-white after:transition-all after:duration-200 after:ease-out after:content-[''] ${
               isOpen
                 ? 'bg-transparent before:top-0 before:w-full before:rotate-45 before:transform after:bottom-0 after:w-full after:-rotate-45 after:transform'
                 : 'before:absolute before:top-[-0.35rem] after:absolute after:right-0 after:bottom-[-0.35rem]'

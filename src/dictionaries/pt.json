@@ -3,9 +3,14 @@
     "project": "O Projeto",
     "photos": "Fotos",
     "data": "Dados",
-    "contact": "Contato",
+    "contact": "Sobre",
     "bgImageAlt": "Fundo de estrelas que desaparecem por trás de uma iluminação artificial difusa",
     "logoImageAlt": "Árvore do cerrado com estrelas acima e luz artificial ao fundo",
     "title": "Noite no Cerrado"
+  },
+  "footer": {
+    "copyright": "© Copyright 2024. Todos os direitos reservados.",
+    "developedBy": "Desenvolvido por",
+    "contribution": "e contribuição de"
   }
 }

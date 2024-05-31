@@ -7,17 +7,21 @@ const githubLink = 'https://github.com/cometsinthesky/noite-no-cerrado'
 const instagramLink = 'https://www.instagram.com/noitenocerrado'
 
 interface SocialIconsProps {
-  size?: string
+  size?: 'small' | 'large'
 }
 
 export const SocialIcons = ({ size }: SocialIconsProps) => {
+  const isLarge = size === 'large'
+  const isSmall = size === 'small'
+
   let width = 20
   let height = 20
-  const isLarge = size === 'large'
-
   if (isLarge) {
     width = 40
     height = 40
+  } else if (isSmall) {
+    width = 15
+    height = 15
   }
 
   return (

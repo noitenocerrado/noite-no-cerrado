@@ -9,5 +9,10 @@ export interface TranslationProps {
       logoImageAlt: string
       title: string
     }
+    footer: {
+      copyright: string
+      developedBy: string
+      contribution: string
+    }
   }
 }
