@@ -17,7 +17,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
     { label: dictionary.navMenu.project, href: '#project' },
     { label: dictionary.navMenu.photos, href: '#photos' },
     { label: dictionary.navMenu.data, href: '#data' },
-    { label: dictionary.navMenu.contact, href: '#contact' },
+    { label: dictionary.navMenu.contact, href: '#about-us' },
   ]
 
   const toggleMenu = () => {
@@ -51,7 +51,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
         <NavBackground dictionary={dictionary} />
 
         <div
-          className={`fixed z-[11] h-full w-full bg-black/50 backdrop-blur-sm ${
+          className={`fixed z-[11] top-0 h-screen w-full bg-black/50 backdrop-blur-sm ${
             isOpen ? 'block' : 'hidden'
           }`}
         />
@@ -66,7 +66,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
               <LanguageSelector />
               <div className='flex flex-col divide-y mt-4'>
                 {navItems.map((item) => (
-                  <div key={item.label} className='py-2'>
+                  <div key={item.label} className='py-2' onClick={toggleMenu}>
                     <NavItem {...item} />
                   </div>
                 ))}

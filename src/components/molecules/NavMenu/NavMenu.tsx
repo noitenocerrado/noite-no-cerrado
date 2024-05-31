@@ -22,7 +22,7 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
 
   const navItemLabelsRightGroup = [
     { label: dictionary.navMenu.data, href: '#data' },
-    { label: dictionary.navMenu.contact, href: '#contact' },
+    { label: dictionary.navMenu.contact, href: '#about-us' },
   ]
 
   useEffect(() => {
