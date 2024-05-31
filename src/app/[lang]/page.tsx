@@ -15,7 +15,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <MobileNavMenu dictionary={dictionary} />
       </div>
 
-      <div className='flex flex-col px-10 h-full mt-20 sm:mt-36 md:mt-40 justify-between'>
+      <div className='flex flex-col px-10 h-full mt-20 sm:px-6 sm:mt-36 justify-between'>
         <div className='mb-8'>
           <AboutUsSection dictionary={dictionary} />
         </div>
