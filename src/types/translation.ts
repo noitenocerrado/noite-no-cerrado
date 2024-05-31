@@ -9,6 +9,14 @@ export interface TranslationProps {
       logoImageAlt: string
       title: string
     }
+    aboutUs: {
+      collaborator1: {
+        description: string
+      }
+      collaborator2: {
+        description: string
+      }
+    }
     footer: {
       copyright: string
       developedBy: string
