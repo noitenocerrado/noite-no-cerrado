@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 :root {
@@ -21,6 +22,7 @@ html {
 }
 
 body {
+  height: 100%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
