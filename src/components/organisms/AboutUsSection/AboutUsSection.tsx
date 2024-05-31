@@ -6,7 +6,7 @@ import profileImageLucas from '../../../../public/lucas-profile-512x512.png'
 import type { TranslationProps } from '../../../types/translation'
 
 export const AboutUsSection = ({ dictionary }: TranslationProps) => (
-  <section id='#about-us' className='container mx-auto md:grid md:grid-cols-2 flex items-start'>
+  <section id='#about-us' className='container mx-auto flex flex-col sm:grid sm:grid-cols-2 sm:items-start'>
     <div className='flex justify-center'>
       <PersonInfo
         social={{
@@ -20,7 +20,7 @@ export const AboutUsSection = ({ dictionary }: TranslationProps) => (
     </div>
 
     <div className='flex justify-center'>
-      <div className='mt-10 md:mt-0'>
+      <div className='mt-10 sm:mt-0'>
         <PersonInfo
           social={{
             instagram: 'https://www.instagram.com/cometsinthesky',
