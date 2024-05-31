@@ -1,4 +1,4 @@
-import { TranslationProps } from '../../../types/translation'
+import type { TranslationProps } from '../../../types/translation'
 import { SectionTitle } from '../../atoms'
 
 export const ProjectSection = ({ dictionary }: TranslationProps) => (

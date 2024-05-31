@@ -26,7 +26,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
 
   return (
     <>
-      <nav className='fixed w-full flex justify-between items-center'>
+      <nav className='fixed z-10 w-full flex justify-between items-center'>
         <button
           onClick={toggleMenu}
           className={`absolute top-5 right-4 h-6 flex items-center cursor-pointer z-50`}

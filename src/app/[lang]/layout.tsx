@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
-import { Locale, i18n } from '../../i18n-config'
+import { Locale, i18n } from '@/i18n-config'
+import { MobileNavMenu, NavMenu } from '@/components'
 import '../globals.css'
+import { getDictionary } from '../../getDictionary'
 
 export const metadata: Metadata = {
   title: 'Noite no Cerrado',
@@ -30,9 +32,21 @@ const RootLayout = async ({
   children: React.ReactNode
   params: { lang: Locale }
 }>) => {
+  const dictionary = await getDictionary(params.lang)
+
   return (
     <html lang={params.lang}>
-      <body className='font-body'>{children}</body>
+      <body className='font-body'>
+        <div className='hidden sm:block'>
+          <NavMenu dictionary={dictionary} />
+        </div>
+
+        <div className='sm:hidden'>
+          <MobileNavMenu dictionary={dictionary} />
+        </div>
+
+        {children}
+      </body>
     </html>
   )
 }
