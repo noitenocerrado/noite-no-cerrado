@@ -2,15 +2,11 @@ import { AboutUsSection, Footer, MobileNavMenu, NavMenu } from '@/components'
 import { Locale } from '../../i18n-config'
 import { getDictionary } from '../../getDictionary'
 
-const Home = async ({
-  params: { lang },
-}: {
-  params: { lang: Locale }
-}) => {
+const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang)
 
   return (
-    <main className='flex flex-col gap-5 bg-zinc-950 text-white relative h-screen'>
+    <main className='flex flex-col gap-5 bg-zinc-950 text-white relative h-full'>
       <div className='hidden sm:block'>
         <NavMenu dictionary={dictionary} />
       </div>
