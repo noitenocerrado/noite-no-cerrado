@@ -7,7 +7,7 @@ import type { TranslationProps } from '../../../types/translation'
 import { SectionTitle } from '../../atoms'
 
 export const AboutUsSection = ({ dictionary }: TranslationProps) => (
-  <section id='#about-us' className='container mx-auto'>
+  <section id='about-us' className='container mx-auto'>
     <SectionTitle title={dictionary.aboutUs.title} />
 
     <div className='flex flex-col sm:grid sm:grid-cols-2 sm:items-start sm:gap-10'>
