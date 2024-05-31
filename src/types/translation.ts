@@ -10,6 +10,7 @@ export interface TranslationProps {
       title: string
     }
     aboutUs: {
+      title: string
       collaborator1: {
         description: string
       }
