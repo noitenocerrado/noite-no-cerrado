@@ -7,7 +7,7 @@ export const useScroll = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 150)
+      setScrolled(window.scrollY > 50)
     }
     window.addEventListener('scroll', handleScroll)
     return () => {
