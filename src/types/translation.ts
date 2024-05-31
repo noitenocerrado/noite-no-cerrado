@@ -9,7 +9,11 @@ export interface TranslationProps {
       logoImageAlt: string
       title: string
     }
+    projectSection: {
+      title: string
+    }
     aboutUs: {
+      title: string
       collaborator1: {
         description: string
       }

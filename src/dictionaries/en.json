@@ -8,7 +8,11 @@
     "logoImageAlt": "Cerrado tree with stars above and artificial light in the background",
     "title": "Cerrado at Night"
   },
+  "projectSection": {
+    "title": "Cerrado at Night"
+  },
   "aboutUs": {
+    "title": "About us",
     "collaborator1": {
       "description": "Senior software developer with over 6 years of experience in web and mobile development. Graduated in Business Administration from Universidade Paulista (UNIP). Amateur astrophotographer and astronomy enthusiast since 8 years old. President of the Astronomy Club of Brasília (CAsB) in 2021 and 2022. Has astrophotographs published on the website of The World at Night (TWAN) project by photographer Babak Tafreshi. Currently dedicated to astrophotography as a hobby and works with astronomy outreach."
     },

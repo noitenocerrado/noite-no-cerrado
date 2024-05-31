@@ -8,7 +8,11 @@
     "logoImageAlt": "Árvore do cerrado com estrelas acima e luz artificial ao fundo",
     "title": "Noite no Cerrado"
   },
+  "projectSection": {
+    "title": "Noite no Cerrado"
+  },
   "aboutUs": {
+    "title": "Sobre nós",
     "collaborator1": {
       "description": "Desenvolvedor de software sênior com mais de 6 anos de experiência em desenvolvimento web e mobile. Graduado em Administração pela Universidade Paulista (UNIP). Astrofotógrafo amador e amante da astronomia desde os 8 anos. Presidente do Clube de Astronomia de Brasília (CAsB) nos anos de 2021 e 2022. Possui astrofotografias publicadas no site do projeto The World at Night (TWAN) do fotógrafo Babak Tafreshi. Atualmente, dedica-se à astrofotografia como hobby e atua na divulgação científica da astronomia."
     },
