@@ -3,9 +3,14 @@
     "project": "The Project",
     "photos": "Photos",
     "data": "Data",
-    "contact": "Contact",
+    "contact": "About us",
     "bgImageAlt": "Background of stars fading behind diffuse artificial lighting",
     "logoImageAlt": "Cerrado tree with stars above and artificial light in the background",
     "title": "Cerrado at Night"
+  },
+  "footer": {
+    "copyright": "© Copyright 2024. All Rights Reserved.",
+    "developedBy": "Developed by",
+    "contribution": "and contribution from"
   }
 }
