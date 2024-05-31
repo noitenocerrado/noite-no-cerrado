@@ -27,11 +27,11 @@ export const SocialIcons = ({ size }: SocialIconsProps) => {
   return (
     <div className={`flex ${isLarge ? 'gap-10' : 'gap-4'} mt-1`}>
       <Link href={instagramLink} target='_blank'>
-        <Image alt='' src={instagramIcon} width={width} height={height} />
+        <Image alt='Instagram' src={instagramIcon} width={width} height={height} />
       </Link>
 
       <Link href={githubLink} target='_blank'>
-        <Image alt='' src={githubIcon} width={width} height={height} />
+        <Image alt='Github' src={githubIcon} width={width} height={height} />
       </Link>
     </div>
   )
