@@ -1,4 +1,4 @@
-import { TranslationProps } from '../../../types/translation'
+import type { TranslationProps } from '../../../types/translation'
 import { SocialIcons } from '../../atoms'
 
 export const Footer = ({ dictionary }: TranslationProps) => (
