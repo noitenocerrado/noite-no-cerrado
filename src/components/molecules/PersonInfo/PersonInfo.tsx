@@ -21,7 +21,7 @@ export const PersonInfo = ({
   profileImgSrc,
   social,
 }: PersonInfoProps) => (
-  <div className='flex flex-col justify-center items-center gap-6 sm:px-6 w-full'>
+  <div className='flex flex-col justify-center items-center gap-6 w-full'>
     <div className='w-[150px]'>
       <Image alt={name} src={profileImgSrc} className='rounded-full' />
     </div>
