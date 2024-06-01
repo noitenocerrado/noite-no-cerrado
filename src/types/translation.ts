@@ -11,6 +11,28 @@ export interface TranslationProps {
     }
     projectSection: {
       title: string
+      subtitle: string
+      content: {
+        paragraph1: string
+        paragraph2: string
+      }
+      accordion: {
+        lightPollutionTitle: string
+        lightPollutionContent: {
+          paragraph1: string
+          paragraph2: string
+          paragraph3: string
+        }
+        impactTitle: string
+        impactContent: {
+          paragraph1: string
+          reduceTitle: string
+          reduceContent: string
+          listItems: string[]
+        }
+        worldHeritageTitle: string
+        worldHeritageContent: string
+      }
     }
     photosSection: {
       title: string

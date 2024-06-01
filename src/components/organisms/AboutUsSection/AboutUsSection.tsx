@@ -7,11 +7,11 @@ import type { TranslationProps } from '../../../types/translation'
 import { SectionTitle } from '../../atoms'
 
 export const AboutUsSection = ({ dictionary }: TranslationProps) => (
-  <section id='about-us' className='container mx-auto'>
+  <section id='about-us' className='container mx-auto max-w-screen-xl'>
     <SectionTitle title={dictionary.aboutUs.title} />
 
-    <div className='flex flex-col sm:grid sm:grid-cols-2 sm:items-start sm:gap-10'>
-      <div className='flex justify-center'>
+    <div className='px-2 flex flex-col items-center sm:flex-row sm:justify-center sm:gap-20'>
+      <div className='max-w-96 flex justify-center'>
         <PersonInfo
           social={{
             instagram: 'https://www.instagram.com/skyframefelix',
@@ -23,7 +23,7 @@ export const AboutUsSection = ({ dictionary }: TranslationProps) => (
         />
       </div>
 
-      <div className='flex justify-center'>
+      <div className='max-w-96 flex justify-center'>
         <div className='mt-10 sm:mt-0'>
           <PersonInfo
             social={{

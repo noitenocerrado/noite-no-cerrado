@@ -6,17 +6,17 @@ import { useState } from 'react'
 
 export const LanguageSelector = () => {
   const router = useRouter()
-
   const pathname = usePathname()
 
-  const currentLanguage = pathname.replace('/', '')
+  const currentLanguage = pathname.split('/')[1]
+  const remainingPath = pathname.split('/').slice(2).join('/')
 
   const [checked, setChecked] = useState(currentLanguage !== 'pt')
 
   const toggleLanguage = () => {
     const selectedLanguage = checked ? 'pt' : 'en'
     setChecked(!checked)
-    router.push(`/${selectedLanguage}`)
+    router.push(`/${selectedLanguage}/${remainingPath}`)
   }
 
   return (
