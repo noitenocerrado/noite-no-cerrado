@@ -34,7 +34,7 @@ export const ProjectSection = ({ dictionary }: TranslationProps) => (
         {dictionary.projectSection.accordion.impactContent.paragraph1}
       </p>
 
-      <p className='text-xl my-5'>
+      <p className='text-lg sm:text-xl my-5'>
         {dictionary.projectSection.accordion.impactContent.reduceTitle}
       </p>
 

@@ -15,7 +15,7 @@ export const Accordion = ({ title, children }: AccordionProps) => {
     <div className='mb-5'>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='text-2xl my-5 w-full text-left flex justify-between items-center'
+        className='text-xl sm:text-2xl my-5 w-full text-left flex justify-between items-center'
       >
         {title}
         <span
