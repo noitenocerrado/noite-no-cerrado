@@ -9,7 +9,38 @@
     "title": "Noite no Cerrado"
   },
   "projectSection": {
-    "title": "Noite no Cerrado"
+    "title": "Noite no Cerrado",
+    "subtitle": "Sobre o projeto",
+    "content": {
+      "paragraph1": "Quando olhamos para o céu noturno de uma grande cidade como Brasília, vemos mais do que apenas estrelas e constelações, vemos o impacto da nossa civilização moderna. As luzes das ruas, dos edifícios, e dos carros criam um brilho intenso que obscurece a visão do Céu. Por isso, nos perguntamos: Como seria observar o céu noturno longe das interferências da cidade? Será que, ao iluminar nossas noites, estamos apagando parte da nossa história e cultura? O quanto a poluição luminosa afeta nossa capacidade de observar o Cosmos? Como a experiência de um céu estrelado pode influenciar nossa compreensão de nós e do nosso lugar no Universo?",
+      "paragraph2": "Ao nos afastarmos da cidade de Brasília e viajarmos rumo à Chapada dos Veadeiros - GO, entramos em uma jornada de resgate do Céu e das estrelas. À medida que as luzes da cidade se desvanecem, o céu revela sua verdadeira beleza e magnitude. O projeto Noite no Cerrado nos convida a refletir sobre a relação entre o impacto das luzes artificiais das cidades e o céu noturno. Através da fotografia, iniciamos uma jornada em busca do verdadeiro Céu do Cerrado."
+    },
+    "accordion": {
+      "lightPollutionTitle": "O que é Poluição Luminosa?",
+      "lightPollutionContent": {
+        "paragraph1": "A astrofotografia, que são fotos do céu noturno, nos permite registrar o céu em sua verdadeira natureza e complexidade, capturando mais detalhes dos astros e dos corpos celestes. Para obter detalhes de um céu mais limpo tivemos que nos afastar das luzes artificiais, pois ofuscam o brilho das estrelas e do próprio Céu. Por isso, realizamos paradas a cada 50 km rumo ao norte de Brasília, em direção aos arredores da cidade de Alto Paraíso de Goiás, finalizando na marca de 200 km de distância de Brasília.",
+        "paragraph2": "Poluição luminosa é o excesso ou má utilização da iluminação artificial que interfere na visibilidade do céu noturno. Esse fenômeno ocorre principalmente no perímetro urbano, onde a iluminação artificial, como postes, carros, outdoors e outras fontes luminosas criam um brilho que ofusca a visão das estrelas e de outros corpos celestes.",
+        "paragraph3": "A má utilização da iluminação pública e de outras fontes luminosas contribui para a poluição luminosa, principalmente quando a luz é direcionada para cima ou para áreas que não necessitam de iluminação. Embora as luzes de LED, utilizadas atualmente, sejam energeticamente mais eficientes, seu uso inadequado na direção vertical intensifica o ofuscamento do céu noturno, obscurecendo a visão das estrelas. Este direcionamento incorreto da iluminação não só desperdiça energia, mas também interfere diretamente na capacidade de observação do Céu, apagando sua beleza natural e perturbando o equilíbrio dos ecossistemas noturnos."
+      },
+      "impactTitle": "O que a Poluição Luminosa tem a ver com você?",
+      "impactContent": {
+        "paragraph1": "A poluição luminosa influencia na sua conta de luz e na taxa de iluminação pública que você paga. A iluminação ineficiente e mal direcionada desperdiça energia, o que aumenta os custos tanto para os contribuintes quanto para os governos municipais. No Brasil, a norma NBR 5101 rege a iluminação pública e define os requisitos mínimos para instalação adequada de sistemas de iluminação que minimizem a poluição luminosa. É importante que essa norma exista, faça sentido e seja cumprida. O que ajudaria a reduzir os desperdícios e melhoraria a eficiência energética, resultando em economia para todos e preservação do céu noturno.",
+        "reduceTitle": "Como reduzir a Poluição Luminosa?",
+        "reduceContent": "Existem várias maneiras práticas de reduzir a poluição luminosa. Por exemplo:",
+        "listItems": [
+          "Utilizar postes que direcionem a luz apenas para onde é necessário, evitando que ela se espalhe para cima ou para os lados;",
+          "Implementar sensores de movimento para que as luzes só sejam ligadas quando há atividade no local, reduzindo o tempo de iluminação desnecessária;",
+          "Regular a intensidade das luzes para níveis adequados, evitando excesso de brilho e desperdício de energia;",
+          "Utilizar lâmpadas de LED com temperatura de cor mais quente (mais amarelada) para reduzir o impacto ambiental e a dispersão da luz;",
+          "Seguir a Norma NBR 5101 para garantir que a iluminação pública seja projetada para baixo e instalada de forma correta para a minimizar a poluição luminosa;",
+          "Instalar temporizadores para desligar a iluminação em horários de baixa atividade ou durante a madrugada;",
+          "Conscientizar as empresas responsáveis pela iluminação pública sobre a importância de reduzir a poluição luminosa e incentivar práticas de iluminação responsável;",
+          "Criar zonas protegidas contra a poluição luminosa em áreas de proteção ambiental."
+        ]
+      },
+      "worldHeritageTitle": "O Céu como patrimônio mundial",
+      "worldHeritageContent": "O céu noturno deve ser reconhecido como um patrimônio mundial devido à sua importância histórica, científica e cultural. Desde os tempos antigos, a humanidade tem se guiado pelas estrelas para a navegação, agricultura e desenvolvimento de mitologias e religiões. Desde 2016, a <a href='https://sites.google.com/site/astrocultura/oceucomopatrimonio' target='_blank' className='underline'>UNESCO define o céu noturno como um patrimônio natural</a>, pois entendemos seu valor inestimável para a ciência, como na astronomia e nas descobertas espaciais. Preservar o céu noturno é proteger um recurso universal que enriquece a experiência humana e conserva nossa herança cultural."
+    }
   },
   "photosSection": {
     "title": "Fotos"
@@ -26,6 +57,6 @@
   "footer": {
     "copyright": "© Copyright 2024. Todos os direitos reservados.",
     "developedBy": "Desenvolvido por",
-    "contribution": "e contribuição de"
+    "contribution": "e"
   }
 }
