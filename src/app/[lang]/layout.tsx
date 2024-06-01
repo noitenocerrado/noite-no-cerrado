@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n-config'
-import { MobileNavMenu, NavMenu } from '@/components'
-import '../globals.css'
+import { Footer, MobileNavMenu, NavMenu } from '@/components'
 import { getDictionary } from '../../getDictionary'
+import '../globals.css'
 
 export const metadata: Metadata = {
   title: 'Noite no Cerrado',
@@ -37,15 +37,19 @@ const RootLayout = async ({
   return (
     <html lang={params.lang}>
       <body className='font-body'>
-        <div className='hidden sm:block'>
-          <NavMenu dictionary={dictionary} />
-        </div>
+        <main className='flex flex-col gap-5 bg-black text-white relative'>
+          <div className='hidden sm:block'>
+            <NavMenu dictionary={dictionary} />
+          </div>
 
-        <div className='sm:hidden'>
-          <MobileNavMenu dictionary={dictionary} />
-        </div>
+          <div className='sm:hidden'>
+            <MobileNavMenu dictionary={dictionary} />
+          </div>
 
-        {children}
+          {children}
+
+          <Footer dictionary={dictionary} />
+        </main>
       </body>
     </html>
   )

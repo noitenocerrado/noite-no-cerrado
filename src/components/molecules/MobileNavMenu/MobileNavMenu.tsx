@@ -14,10 +14,10 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: dictionary.navMenu.project, href: '#project' },
-    { label: dictionary.navMenu.photos, href: '#photos' },
-    { label: dictionary.navMenu.data, href: '#data' },
-    { label: dictionary.navMenu.contact, href: '#about-us' },
+    { label: dictionary.navMenu.project, href: '/#project' },
+    { label: dictionary.navMenu.photos, href: '/photos' },
+    { label: dictionary.navMenu.data, href: '/#data' },
+    { label: dictionary.navMenu.contact, href: '/#about-us' },
   ]
 
   const toggleMenu = () => {

@@ -16,13 +16,13 @@ export const NavMenu = ({ dictionary }: TranslationProps) => {
   const [fadeIn, setFadeIn] = useState(false)
 
   const navItemLabelsLeftGroup = [
-    { label: dictionary.navMenu.project, href: '#project' },
-    { label: dictionary.navMenu.photos, href: '#photos' },
+    { label: dictionary.navMenu.project, href: '/#project' },
+    { label: dictionary.navMenu.photos, href: '/photos' },
   ]
 
   const navItemLabelsRightGroup = [
-    { label: dictionary.navMenu.data, href: '#data' },
-    { label: dictionary.navMenu.contact, href: '#about-us' },
+    { label: dictionary.navMenu.data, href: '/#data' },
+    { label: dictionary.navMenu.contact, href: '/#about-us' },
   ]
 
   useEffect(() => {
