@@ -1,5 +1,8 @@
 export interface TranslationProps {
   dictionary: {
+    common: {
+      contentToBeDefined: string
+    }
     navMenu: {
       project: string
       photos: string
@@ -7,6 +10,9 @@ export interface TranslationProps {
       contact: string
       bgImageAlt: string
       logoImageAlt: string
+      title: string
+    }
+    dataSection: {
       title: string
     }
     projectSection: {

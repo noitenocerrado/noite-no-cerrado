@@ -1,4 +1,7 @@
 {
+  "common": {
+    "contentToBeDefined": "Em construção..."
+  },
   "navMenu": {
     "project": "O Projeto",
     "photos": "Fotos",
@@ -44,6 +47,9 @@
   },
   "photosSection": {
     "title": "Fotos"
+  },
+  "dataSection": {
+    "title": "Dados"
   },
   "aboutUs": {
     "title": "Sobre nós",

@@ -4,6 +4,6 @@ import { SectionTitle } from '../../atoms'
 export const PhotosSection = ({ dictionary }: TranslationProps) => (
   <section id='photos' className='text-center'>
     <SectionTitle title={dictionary.photosSection.title} />
-    ...
+    {dictionary.common.contentToBeDefined}
   </section>
 )

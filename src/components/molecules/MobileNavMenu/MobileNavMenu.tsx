@@ -16,7 +16,7 @@ export const MobileNavMenu = ({ dictionary }: TranslationProps) => {
   const navItems = [
     { label: dictionary.navMenu.project, href: '/#project' },
     { label: dictionary.navMenu.photos, href: '/photos' },
-    { label: dictionary.navMenu.data, href: '/#data' },
+    { label: dictionary.navMenu.data, href: '/data' },
     { label: dictionary.navMenu.contact, href: '/#about-us' },
   ]
 
