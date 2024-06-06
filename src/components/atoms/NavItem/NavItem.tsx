@@ -1,5 +1,6 @@
 'use client'
 
+import { sendGAEvent } from '@next/third-parties/google'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -17,10 +18,18 @@ export const NavItem = ({ label, href }: NavItemProps) => {
     ? `/${currentLanguage}${href}`
     : `/${currentLanguage}${href}`
 
+  const handleClick = () => {
+    sendGAEvent('event', 'nav_item', {
+      action: 'click',
+      value: `nav_item_${label}`,
+    })
+  }
+
   return (
     <Link
       href={fullPath}
       className='hover:text-[#19EA5C] md:text-xl xs:text-xs'
+      onClick={handleClick}
     >
       <li className='relative group select-none'>
         {label}
