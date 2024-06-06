@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n-config'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Footer, MobileNavMenu, NavMenu } from '@/components'
 import { getDictionary } from '../../getDictionary'
 import '../globals.css'
@@ -51,6 +52,7 @@ const RootLayout = async ({
           <Footer dictionary={dictionary} />
         </main>
       </body>
+      <GoogleAnalytics gaId='G-YEWHWRDSCK' />
     </html>
   )
 }
