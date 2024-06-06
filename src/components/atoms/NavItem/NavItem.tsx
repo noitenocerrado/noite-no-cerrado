@@ -19,10 +19,7 @@ export const NavItem = ({ label, href }: NavItemProps) => {
     : `/${currentLanguage}${href}`
 
   const handleClick = () => {
-    sendGAEvent('event', 'nav_item', {
-      action: 'click',
-      value: `nav_item_${label}`,
-    })
+    sendGAEvent('event', `click:nav_item:${label}`)
   }
 
   return (

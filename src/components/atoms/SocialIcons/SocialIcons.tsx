@@ -28,10 +28,7 @@ export const SocialIcons = ({ size }: SocialIconsProps) => {
   }
 
   const handleClickSocialIcon = (label: string) => {
-    sendGAEvent('event', 'social_icon', {
-      action: 'click',
-      value: `project_${label}`,
-    })
+    sendGAEvent('event', `click:social_icon:project[${label}]`)
   }
 
   return (
