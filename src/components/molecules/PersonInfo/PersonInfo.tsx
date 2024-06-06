@@ -23,10 +23,7 @@ export const PersonInfo = ({
   social,
 }: PersonInfoProps) => {
   const handleClickSocialIcon = (label: string) => {
-    sendGAEvent('event', 'social_icon', {
-      action: 'click',
-      value: `${label}_of_${name}`,
-    })
+    sendGAEvent('event', `click:social_icon:${label}_of_${name}`)
   }
 
   return (

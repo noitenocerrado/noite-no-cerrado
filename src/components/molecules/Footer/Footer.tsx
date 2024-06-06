@@ -6,10 +6,7 @@ import type { TranslationProps } from '../../../types/translation'
 
 export const Footer = ({ dictionary }: TranslationProps) => {
   const handleClickSocialIcon = (label: string) => {
-    sendGAEvent('event', 'personal_social_icon', {
-      action: 'click',
-      value: `${label}`,
-    })
+    sendGAEvent('event', `click:personal_social_icon:${label}`)
   }
 
   return (
