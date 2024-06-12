@@ -26,7 +26,6 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  console.log('@@@@: ', pathname)
 
   // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually. This prevents the language prefix from being added to these files URLs.
   if (
@@ -39,7 +38,9 @@ export function middleware(request: NextRequest) {
       '/lucas-profile-512x512.png',
       '/mateus-profile-512x512.png',
       '/orcid150.png',
+      '/outstatic'
     ].includes(pathname)
+    || pathname.match(/\/outstatic\/*/)
   )
     return
 

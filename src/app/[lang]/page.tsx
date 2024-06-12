@@ -6,7 +6,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang)
 
   return (
-    <div className='flex flex-col px-10 h-full mt-20 sm:px-6 sm:mt-36 justify-between'>
+    <div className='flex flex-col px-10 h-full sm:px-6 justify-between'>
       <div className='mb-16'>
         <ProjectSection dictionary={dictionary} />
       </div>
