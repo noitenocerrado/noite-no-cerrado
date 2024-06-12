@@ -38,7 +38,7 @@ const RootLayout = async ({
   return (
     <html lang={params.lang}>
       <body className='font-body'>
-        <main className='flex flex-col gap-5 bg-black text-white relative'>
+        <main className='flex flex-col bg-black text-white relative'>
           <div className='hidden sm:block'>
             <NavMenu dictionary={dictionary} />
           </div>
@@ -47,7 +47,7 @@ const RootLayout = async ({
             <MobileNavMenu dictionary={dictionary} />
           </div>
 
-          {children}
+          <div className='relative mt-20 sm:mt-36'>{children}</div>
 
           <Footer dictionary={dictionary} />
         </main>
