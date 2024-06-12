@@ -1,10 +1,34 @@
 # Home for the Night in the Cerrado project
 
-> If you are looking for the content of the project, please visit [noitenocerrado.vercel.app](noitenocerrado.vercel.app)
-
 ## Objectives
 
 Raise awareness about the impact of Light Pollution on society.
+
+## About the project
+
+> If you are looking for the content of the project, please visit [noitenocerrado.vercel.app](noitenocerrado.vercel.app)
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Getting Started
+
+First, install the dependencies using [`Yarn`](https://yarnpkg.com/getting-started/install):
+
+```bash
+yarn install
+```
+
+Run the project:
+
+```bash
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### 🌎 Translations
+
+We use i18n routing, native to Next.js.
 
 ## Licenses
 

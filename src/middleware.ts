@@ -26,9 +26,22 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
+  console.log('@@@@: ', pathname)
 
-  // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
-  if (['/profile_img.webp', '/mateus_lecture.webp'].includes(pathname)) return
+  // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually. This prevents the language prefix from being added to these files URLs.
+  if (
+    [
+      '/bg_stars.webp',
+      '/github150.png',
+      '/instagram150.png',
+      '/linkedin150.png',
+      '/logo.webp',
+      '/lucas-profile-512x512.png',
+      '/mateus-profile-512x512.png',
+      '/orcid150.png',
+    ].includes(pathname)
+  )
+    return
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every((locale) => {
