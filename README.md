@@ -6,7 +6,7 @@ Raise awareness about the impact of Light Pollution on society.
 
 ## About the project
 
-> If you are looking for the content of the project, please visit [noitenocerrado.vercel.app](noitenocerrado.vercel.app)
+> If you are looking for the content of the project, please visit [noitenocerrado.vercel.app](https://noitenocerrado.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
