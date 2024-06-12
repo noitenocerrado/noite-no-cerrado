@@ -40,6 +40,7 @@ export function middleware(request: NextRequest) {
       '/orcid150.png',
       '/outstatic'
     ].includes(pathname)
+    || pathname.match(/\/outstatic\/*/)
   )
     return
 
