@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://noitenocerrado.vercel.app/",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,6 +14,7 @@
     "@formatjs/intl-localematcher": "^0.5.4",
     "@next/third-parties": "^14.2.3",
     "country-flag-icons": "^1.5.11",
+    "firebase": "^10.12.2",
     "negotiator": "^0.6.3",
     "next": "14.2.3",
     "outstatic": "^1.4.8",
