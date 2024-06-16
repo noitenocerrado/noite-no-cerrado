@@ -1,5 +1,5 @@
 import type { TranslationProps } from '../../../types/translation'
-import { SectionTitle } from '../../atoms'
+import { QuickAccessCard, SectionTitle } from '../../atoms'
 import { Accordion } from '../../molecules'
 
 const createMarkup = (html: string) => {
@@ -8,6 +8,16 @@ const createMarkup = (html: string) => {
 
 export const ProjectSection = ({ dictionary }: TranslationProps) => (
   <section id='project' className='container mx-auto max-w-screen-md px-4'>
+    <div className='block sm:hidden mb-5'>
+      <div className='grid grid-cols-2 gap-6'>
+        <QuickAccessCard
+          title={dictionary.photosSection.title}
+          href='/photos'
+        />
+        <QuickAccessCard title={dictionary.dataSection.title} href='/data' />
+      </div>
+    </div>
+
     <div className='hidden sm:block text-center'>
       <SectionTitle title={dictionary.projectSection.title} />
     </div>
