@@ -1,0 +1,26 @@
+export const images = [
+  {
+    thumbnail:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/thumbnail/panorama_parada1.jpg',
+    original:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/fullsize/panorama_parada1.jpg',
+  },
+  {
+    thumbnail:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/thumbnail/panorama_parada2.jpg',
+    original:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/fullsize/panorama_parada2.jpg',
+  },
+  {
+    thumbnail:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/thumbnail/panorama_parada3.jpg',
+    original:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/fullsize/panorama_parada3.jpg',
+  },
+  {
+    thumbnail:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/thumbnail/panorama_parada4.jpg',
+    original:
+      'https://d21elisfc3zsvc.cloudfront.net/photos/data/dslr/fullsize/panorama_parada4.jpg',
+  },
+]

@@ -2453,6 +2453,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-image-gallery@npm:^1":
+  version: 1.2.4
+  resolution: "@types/react-image-gallery@npm:1.2.4"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/37b68712bfb029797178c298a216bdea27c3972dc0446c5dacfb6ee762be8fcdb45dd36de2a7f1ab17f9196f47d591f8ff774534718d6c62dd16e8f7f5c84ca2
+  languageName: node
+  linkType: hard
+
 "@types/react-transition-group@npm:^4.4.0":
   version: 4.4.10
   resolution: "@types/react-transition-group@npm:4.4.10"
@@ -5927,6 +5936,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    "@types/react-image-gallery": "npm:^1"
     country-flag-icons: "npm:^1.5.11"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.2.3"
@@ -5937,6 +5947,7 @@ __metadata:
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"
+    react-image-gallery: "npm:^1.3.0"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5"
   languageName: unknown
@@ -6783,6 +6794,15 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
   checksum: 10c0/5b13f99a125d92ee618f2d4e218d5ec854f8cac1b568e83b4b125efb002cc79eef0f5c06b54015c78e16a830cf1ea356a646e8c6abb00b7ca8225dba9a92091e
+  languageName: node
+  linkType: hard
+
+"react-image-gallery@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "react-image-gallery@npm:1.3.0"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/c0322332327b3c1aa553d75245cfdec6414ebfb88c28a13291b7152c6db033ec70421210943778e9cfa79fe2577c17baf15601bc3810bffd0ce6a82017aff3d9
   languageName: node
   linkType: hard
 
