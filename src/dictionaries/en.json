@@ -46,7 +46,27 @@
     }
   },
   "photosSection": {
-    "title": "Photos"
+    "title": "Photos",
+    "pl_gallery": {
+      "description": "The photos below were captured during the journey towards Chapada dos Veadeiros, in Goiás. Every 50 km from Brasília, we documented the night sky and light pollution. The images show the difference between the city sky and the Cerrado sky, revealing the beauty and magnitude of the Cosmos. The 4 photos below were taken with the same camera and lens settings.",
+      "exif": {
+        "focalLength": "Focal length: ",
+        "aperture": "Aperture: ",
+        "exposureTime": "Exposure time: "
+      },
+      "pl_panorama_stop1": {
+        "description": "50 km from Brasilia"
+      },
+      "pl_panorama_stop2": {
+        "description": "100 km from Brasilia"
+      },
+      "pl_panorama_stop3": {
+        "description": "150 km from Brasilia"
+      },
+      "pl_panorama_stop4": {
+        "description": "250 km from Brasilia"
+      }
+    }
   },
   "dataSection": {
     "title": "Data"

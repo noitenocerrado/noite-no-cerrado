@@ -42,6 +42,26 @@ export interface TranslationProps {
     }
     photosSection: {
       title: string
+      pl_gallery: {
+        description: string
+        exif: {
+          focalLength: string
+          aperture: string
+          exposureTime: string
+        }
+        pl_panorama_stop1: {
+          description: string
+        }
+        pl_panorama_stop2: {
+          description: string
+        }
+        pl_panorama_stop3: {
+          description: string
+        }
+        pl_panorama_stop4: {
+          description: string
+        }
+      }
     }
     aboutUs: {
       title: string
