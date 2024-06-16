@@ -6,6 +6,8 @@ export const PhotosSection = ({ dictionary }: TranslationProps) => (
   <section id='photos' className='text-center'>
     <SectionTitle title={dictionary.photosSection.title} />
 
-    <LightPollutionGallery dictionary={dictionary} />
+    <div className='container m-auto'>
+      <LightPollutionGallery dictionary={dictionary} />
+    </div>
   </section>
 )

@@ -46,7 +46,27 @@
     }
   },
   "photosSection": {
-    "title": "Fotos"
+    "title": "Fotos",
+    "pl_gallery": {
+      "description": "As fotos abaixo foram capturadas durante a jornada rumo à Chapada dos Veadeiros, em Goiás. A cada 50 km de distância de Brasília, registramos o céu noturno e a poluição luminosa. As imagens mostram a diferença entre o céu da cidade e o céu do Cerrado, revelando a beleza e a magnitude do Cosmos. As 4 fotos abaixo possuem as mesmas configurações de câmera e lente.",
+      "exif": {
+        "focalLength": "Distância focal: ",
+        "aperture": "Abertura: ",
+        "exposureTime": "Tempo de exposição: "
+      },
+      "pl_panorama_stop1": {
+        "description": "50 km de Brasília"
+      },
+      "pl_panorama_stop2": {
+        "description": "100 km de Brasília"
+      },
+      "pl_panorama_stop3": {
+        "description": "150 km de Brasília"
+      },
+      "pl_panorama_stop4": {
+        "description": "250 km de Brasília"
+      }
+    }
   },
   "dataSection": {
     "title": "Dados"
