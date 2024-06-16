@@ -48,23 +48,27 @@
   "photosSection": {
     "title": "Fotos",
     "pl_gallery": {
-      "description": "As fotos abaixo foram capturadas durante a jornada rumo à Chapada dos Veadeiros, em Goiás. A cada 50 km de distância de Brasília, registramos o céu noturno e a poluição luminosa. As imagens mostram a diferença entre o céu da cidade e o céu do Cerrado, revelando a beleza e a magnitude do Cosmos. As 4 fotos abaixo possuem as mesmas configurações de câmera e lente.",
+      "description": "As fotos abaixo foram capturadas durante a jornada rumo à Chapada dos Veadeiros, em Goiás. A cada 50 km de distância de Brasília, registramos o céu noturno e a poluição luminosa. As imagens mostram a diferença entre o céu da cidade e o céu do Cerrado, revelando a beleza e a magnitude do Cosmos. As fotos possuem as mesmas configurações de câmera e lente.",
       "exif": {
         "focalLength": "Distância focal: ",
         "aperture": "Abertura: ",
         "exposureTime": "Tempo de exposição: "
       },
       "pl_panorama_stop1": {
-        "description": "50 km de Brasília"
+        "description": "50 km de Brasília",
+        "descriptionDesktop": "Foto 1: tirada a 50 km de Brasília. O céu noturno é ofuscado pela poluição luminosa da cidade, que cria um brilho intenso e obscurece a visão das estrelas."
       },
       "pl_panorama_stop2": {
-        "description": "100 km de Brasília"
+        "description": "100 km de Brasília",
+        "descriptionDesktop": "Foto 2: tirada a 100 km de Brasília. O céu noturno começa a se revelar, à medida que nos afastamos das luzes da cidade."
       },
       "pl_panorama_stop3": {
-        "description": "150 km de Brasília"
+        "description": "150 km de Brasília",
+        "descriptionDesktop": "Foto 3: tirada a 150 km de Brasília. A Via Láctea pode ser visualizada a olho nu."
       },
       "pl_panorama_stop4": {
-        "description": "250 km de Brasília"
+        "description": "250 km de Brasília",
+        "descriptionDesktop": "Foto 4: tirada a 250 km de Brasília. A poluição luminosa ainda existe, porém menos visível. É possível observar o arco da Via Láctea de forma mais nítida, ocupando uma grande área do céu."
       }
     }
   },

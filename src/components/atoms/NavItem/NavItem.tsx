@@ -3,6 +3,7 @@
 import { sendGAEvent } from '@next/third-parties/google'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useTranslatedPath } from '../../../hooks'
 
 interface NavItemProps {
   label: string
@@ -10,13 +11,7 @@ interface NavItemProps {
 }
 
 export const NavItem = ({ label, href }: NavItemProps) => {
-  const pathname = usePathname()
-
-  const currentLanguage = pathname.split('/')[1]
-
-  const fullPath = href.startsWith('/')
-    ? `/${currentLanguage}${href}`
-    : `/${currentLanguage}${href}`
+  const fullPath = useTranslatedPath({ href })
 
   const handleClick = () => {
     sendGAEvent('event', `click:nav_item:${label}`)

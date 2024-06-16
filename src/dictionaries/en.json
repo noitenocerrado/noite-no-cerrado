@@ -15,13 +15,13 @@
     "title": "Night in the Cerrado",
     "subtitle": "About the project",
     "content": {
-      "paragraph1": "When we look at the night sky from a big city like Brasília, we see more than just stars and constellations; we see the impact of our modern civilization. Streetlights, buildings, and cars create an intense glow that obscures the view of the Sky. So, we wondered: What would it be like to observe the night sky away from the city's interference? Are we erasing part of our history and culture by illuminating our nights? How much does light pollution affect our ability to observe the Cosmos? How can the experience of a starry sky influence our understanding of ourselves and our place in the Universe?",
-      "paragraph2": "As we move away from the city of Brasília and travel towards Chapada dos Veadeiros - GO, we embark on a journey to reclaim the Sky and the stars. As the city's lights fade, the sky reveals its true beauty and magnitude. The Night in the Cerrado project invites us to reflect on the relationship between the impact of city lights and the night sky. Through photography, we embark on a journey to discover the true Sky of the Cerrado."
+      "paragraph1": "When we look at the night sky from a big city like Brasilia, we see more than just stars and constellations; we see the impact of our modern civilization. Streetlights, buildings, and cars create an intense glow that obscures the view of the Sky. So, we wondered: What would it be like to observe the night sky away from the city's interference? Are we erasing part of our history and culture by illuminating our nights? How much does light pollution affect our ability to observe the Cosmos? How can the experience of a starry sky influence our understanding of ourselves and our place in the Universe?",
+      "paragraph2": "As we move away from the city of Brasilia and travel towards Chapada dos Veadeiros - GO, we embark on a journey to reclaim the Sky and the stars. As the city's lights fade, the sky reveals its true beauty and magnitude. The Night in the Cerrado project invites us to reflect on the relationship between the impact of city lights and the night sky. Through photography, we embark on a journey to discover the true Sky of the Cerrado."
     },
     "accordion": {
       "lightPollutionTitle": "What is Light Pollution?",
       "lightPollutionContent": {
-        "paragraph1": "Astrophotography, which involves taking photos of the night sky, allows us to capture the sky in its true nature and complexity, revealing more details of stars and celestial bodies. To capture a clearer sky, we had to move away from artificial lights, as they obscure the brightness of the stars and the Sky itself. Therefore, we made stops every 50 km heading north of Brasília, towards the outskirts of Alto Paraíso de Goiás, finishing at the 200 km mark from Brasília.",
+        "paragraph1": "Astrophotography, which involves taking photos of the night sky, allows us to capture the sky in its true nature and complexity, revealing more details of stars and celestial bodies. To capture a clearer sky, we had to move away from artificial lights, as they obscure the brightness of the stars and the Sky itself. Therefore, we made stops every 50 km heading north of Brasilia, towards the outskirts of Alto Paraíso de Goiás, finishing at the 200 km mark from Brasilia.",
         "paragraph2": "Light pollution is the excess or misuse of artificial lighting that interferes with the visibility of the night sky. This phenomenon occurs mainly in urban areas, where artificial lighting, such as streetlights, cars, billboards, and other light sources, creates a glow that obscures the view of stars and other celestial bodies.",
         "paragraph3": "The improper use of public lighting and other light sources contributes to light pollution, especially when light is directed upwards or to areas that do not need illumination. Although LED lights, currently used, are more energy-efficient, their improper vertical use intensifies the glare of the night sky, obscuring the view of stars. This incorrect direction of lighting not only wastes energy but also directly interferes with the ability to observe the Sky, erasing its natural beauty and disturbing the balance of nocturnal ecosystems."
       },
@@ -48,23 +48,27 @@
   "photosSection": {
     "title": "Photos",
     "pl_gallery": {
-      "description": "The photos below were captured during the journey towards Chapada dos Veadeiros, in Goiás. Every 50 km from Brasília, we documented the night sky and light pollution. The images show the difference between the city sky and the Cerrado sky, revealing the beauty and magnitude of the Cosmos. The 4 photos below were taken with the same camera and lens settings.",
+      "description": "The photos below were captured during the journey towards Chapada dos Veadeiros, in Goiás. Every 50 km from Brasilia, we documented the night sky and light pollution. The images show the difference between the city sky and the Cerrado sky, revealing the beauty and magnitude of the Cosmos. The photos were taken with the same camera and lens settings.",
       "exif": {
         "focalLength": "Focal length: ",
         "aperture": "Aperture: ",
         "exposureTime": "Exposure time: "
       },
       "pl_panorama_stop1": {
-        "description": "50 km from Brasilia"
+        "description": "50 km from Brasilia",
+        "descriptionDesktop": "Photo 1: taken 50 km from Brasilia. The night sky is obscured by the city's light pollution, creating a bright glow that hides the stars."
       },
       "pl_panorama_stop2": {
-        "description": "100 km from Brasilia"
+        "description": "100 km from Brasilia",
+        "descriptionDesktop": "Photo 2: taken 100 km from Brasilia. The night sky begins to reveal itself as we move away from the city's lights."
       },
       "pl_panorama_stop3": {
-        "description": "150 km from Brasilia"
+        "description": "150 km from Brasilia",
+        "descriptionDesktop": "Photo 3: taken 150 km from Brasilia. The Milky Way can be seen with the naked eye."
       },
       "pl_panorama_stop4": {
-        "description": "250 km from Brasilia"
+        "description": "250 km from Brasilia",
+        "descriptionDesktop": "Photo 4: taken 250 km from Brasilia. Light pollution still exists but is less visible. The arc of the Milky Way can be observed more clearly, occupying a large area of the sky."
       }
     }
   },
@@ -74,10 +78,10 @@
   "aboutUs": {
     "title": "About us",
     "collaborator1": {
-      "description": "Senior software developer with over 6 years of experience in web and mobile development. Graduated in Business Administration from Universidade Paulista (UNIP). Amateur astrophotographer and astronomy enthusiast since 8 years old. President of the Astronomy Club of Brasília (CAsB) in 2022 and 2023. Has astrophotographs published on the website of The World at Night (TWAN) project by photographer Babak Tafreshi. Currently dedicated to astrophotography as a hobby and works with astronomy outreach."
+      "description": "Senior software developer with over 6 years of experience in web and mobile development. Graduated in Business Administration from Universidade Paulista (UNIP). Amateur astrophotographer and astronomy enthusiast since 8 years old. President of the Astronomy Club of Brasilia (CAsB) in 2022 and 2023. Has astrophotographs published on the website of The World at Night (TWAN) project by photographer Babak Tafreshi. Currently dedicated to astrophotography as a hobby and works with astronomy outreach."
     },
     "collaborator2": {
-      "description": "Researcher in the field of Astronomy Education and Astrophotography, currently pursuing a Master's degree in Physics Education at the University of Brasília (UnB). An amateur astrophotographer and astronomy enthusiast, with over 10 years of experience in capturing the night sky and celestial objects. He has published astrophotography articles in specialized astronomy journals. Graduated in Natural Sciences from the University of Brasília (UnB/FUP), he is dedicated to promoting the use of astrophotography for learning in Astronomy, Physics, and Natural Sciences."
+      "description": "Researcher in the field of Astronomy Education and Astrophotography, currently pursuing a Master's degree in Physics Education at the University of Brasilia (UnB). An amateur astrophotographer and astronomy enthusiast, with over 10 years of experience in capturing the night sky and celestial objects. He has published astrophotography articles in specialized astronomy journals. Graduated in Natural Sciences from the University of Brasilia (UnB/FUP), he is dedicated to promoting the use of astrophotography for learning in Astronomy, Physics, and Natural Sciences."
     }
   },
   "footer": {
