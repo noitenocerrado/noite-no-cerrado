@@ -3,13 +3,15 @@ import Image from 'next/image'
 import ReactImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
 
-export interface GalleryProps extends TranslationProps {
+export interface GalleryProps {
   images: {
     description: string
     thumbnail: string
     original: string
     blurDataURL: string
   }[]
+
+  dictionary: TranslationProps
 }
 
 export const MobileGallery = ({ dictionary, images }: GalleryProps) => (

@@ -1,4 +1,4 @@
-import type { TranslationProps } from '../../../types/translation'
+import type { TranslationProps } from '@/types/translation'
 import { QuickAccessCard, SectionTitle } from '../../atoms'
 import { Accordion } from '../../molecules'
 
@@ -6,7 +6,11 @@ const createMarkup = (html: string) => {
   return { __html: html.replace(/<a /g, '<a class="underline" ') }
 }
 
-export const ProjectSection = ({ dictionary }: TranslationProps) => (
+export const ProjectSection = ({
+  dictionary,
+}: {
+  dictionary: TranslationProps
+}) => (
   <section id='project' className='container mx-auto max-w-screen-md px-4'>
     <div className='block sm:hidden mb-5'>
       <div className='grid grid-cols-2 gap-6'>

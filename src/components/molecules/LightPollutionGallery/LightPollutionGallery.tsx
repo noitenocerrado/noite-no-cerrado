@@ -23,7 +23,9 @@ const getImages = async (): Promise<Images[]> => {
 
 export const LightPollutionGallery = async ({
   dictionary,
-}: TranslationProps) => {
+}: {
+  dictionary: TranslationProps
+}) => {
   const images = await getImages()
 
   return (

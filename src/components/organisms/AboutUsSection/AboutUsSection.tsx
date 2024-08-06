@@ -3,10 +3,14 @@
 import { PersonInfo } from '../../molecules'
 import profileImageMateus from '../../../../public/mateus-profile-512x512.png'
 import profileImageLucas from '../../../../public/lucas-profile-512x512.png'
-import type { TranslationProps } from '../../../types/translation'
 import { SectionTitle } from '../../atoms'
+import type { TranslationProps } from '@/types/translation'
 
-export const AboutUsSection = ({ dictionary }: TranslationProps) => (
+export const AboutUsSection = ({
+  dictionary,
+}: {
+  dictionary: TranslationProps
+}) => (
   <section id='about-us' className='container mx-auto max-w-screen-xl'>
     <SectionTitle title={dictionary.aboutUs.title} />
 

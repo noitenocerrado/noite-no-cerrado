@@ -5,7 +5,7 @@ import type { TranslationProps } from '@/types/translation'
 import { useTranslatedPath } from '@/hooks'
 import logoImg from '../../../../public/logo.webp'
 
-export const Logo = ({ dictionary }: TranslationProps) => {
+export const Logo = ({ dictionary }: { dictionary: TranslationProps }) => {
   const fullPath = useTranslatedPath({ href: '/' })
 
   return (
