@@ -11,7 +11,7 @@ import {
   SocialIcons,
 } from '../../atoms'
 
-export const NavMenu = ({ dictionary }: TranslationProps) => {
+export const NavMenu = ({ dictionary }: { dictionary: TranslationProps }) => {
   const { scrolled } = useScroll()
   const [fadeIn, setFadeIn] = useState(false)
 

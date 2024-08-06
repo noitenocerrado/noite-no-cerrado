@@ -2,7 +2,11 @@ import Image from 'next/image'
 import type { TranslationProps } from '@/types/translation'
 import bgStarsImg from '../../../../public/bg_stars.webp'
 
-export const NavBackground = ({ dictionary }: TranslationProps) => (
+export const NavBackground = ({
+  dictionary,
+}: {
+  dictionary: TranslationProps
+}) => (
   <div>
     <div className='absolute inset-0 bg-black/10 pointer-events-none' />
     <div className='absolute inset-y-0 left-0 w-full h-full'>

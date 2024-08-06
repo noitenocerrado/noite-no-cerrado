@@ -7,9 +7,5 @@ const dictionaries: { [key: string]: () => Promise<{}> } = {
   pt: () => import('./dictionaries/pt.json').then((module) => module.default),
 }
 
-export const getDictionary = async (
-  locale: Locale
-): Promise<TranslationProps['dictionary']> =>
-  (dictionaries[locale]?.() ?? dictionaries.en()) as Promise<
-    TranslationProps['dictionary']
-  >
+export const getDictionary = async (locale: Locale): Promise<any> =>
+  (dictionaries[locale]?.() ?? dictionaries.en()) as Promise<any>

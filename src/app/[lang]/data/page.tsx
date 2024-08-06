@@ -7,7 +7,7 @@ const Photos = async ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <div className='flex flex-col px-10 h-full sm:px-6 justify-between'>
-      <div className='mb-16'>
+      <div className='mb-16 container m-auto'>
         <DataSection dictionary={dictionary} />
       </div>
     </div>

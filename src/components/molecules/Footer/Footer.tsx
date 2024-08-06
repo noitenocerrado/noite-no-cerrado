@@ -4,7 +4,7 @@ import { sendGAEvent } from '@next/third-parties/google'
 import { SocialIcons } from '../../atoms'
 import type { TranslationProps } from '../../../types/translation'
 
-export const Footer = ({ dictionary }: TranslationProps) => {
+export const Footer = ({ dictionary }: { dictionary: TranslationProps }) => {
   const handleClickSocialIcon = (label: string) => {
     sendGAEvent('event', `click:personal_social_icon:${label}`)
   }
