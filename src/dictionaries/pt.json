@@ -73,7 +73,63 @@
     }
   },
   "dataSection": {
-    "title": "Dados"
+    "title": "Dados",
+    "labels": {
+      "date": "Data",
+      "time": "Hora",
+      "place": "Local",
+      "maps": "Mapa"
+    },
+    "content": {
+      "firstStop": {
+        "title": "Primeira parada - 50 km",
+        "description": "A 50 km de Brasília realizamos a primeira parada numa plantação próxima à BR 010 e encontramos nuvens no céu, que dispersaram as luzes artificiais de Brasília e de cidades próximas, como Sobradinho e Planaltina. A cortina de poluição luminosa se estendeu até a altura da estrela Acrux (α Cru), aproximadamente 42° acima do horizonte, com magnitude de 1,4.",
+        "info": {
+          "date": "08/06/2024",
+          "timeOfCapture": "19:31 (-3:00 UTC)",
+          "place": {
+            "coordinates": "15°30'06.1\"S 47°31'29.8\"W",
+            "mapsUrl": "https://maps.app.goo.gl/xTWfhTMC9wD8ogYG7"
+          }
+        }
+      },
+      "secondStop": {
+        "title": "Segunda parada - 100 km",
+        "description": "Realizamos uma parada próximo à uma fazenda ao lado da BR 010 e percebemos uma redução da poluição luminosa, aproximadamente 27° acima do horizonte, tendo como referência a estrela Lambda Vela (λ Vel) de magnitude 2,4, ponto brilhante amarelo à direita na foto. A partir do horizonte, a estrela mais brilhante facilmente observada a olho nu é Epsilon Carinae (ε Car), com magnitude aprox. de 2,5.",
+        "info": {
+          "date": "08/06/2024",
+          "timeOfCapture": "20:38 (-3:00 UTC)",
+          "place": {
+            "coordinates": "14°54'38.4\"S 47°35'15.9\"W",
+            "mapsUrl": "https://maps.app.goo.gl/W1fTpnUKfavHkexn9"
+          }
+        }
+      },
+      "thirdStop": {
+        "title": "Terceira parada - 150 km",
+        "description": "A uma distância de 150 km de Brasília, numa estrada rural próxima à BR 010, já era possível ver a mancha da Via Láctea no céu, ainda com presença de nuvens. A cortina de poluição luminosa se estendeu a aproximadamente 19° acima do horizonte, na altura da estrela Markeb (κ Vel), de magnitude 2,7. Notamos também uma redução na quantidade de nuvens no céu.",
+        "info": {
+          "date": "08/06/2024",
+          "timeOfCapture": "21:41 (-3:00 UTC)",
+          "place": {
+            "coordinates": "14°31'47.7\"S 47°29'54.7\"W",
+            "mapsUrl": "https://maps.app.goo.gl/Eczazuk13xh2mAYC8"
+          }
+        }
+      },
+      "fourthStop": {
+        "title": "Quarta parada - 220 km",
+        "description": "Já na Chapada dos Veadeiros, depois de passarmos pela cidade de Alto Paraíso (GO), seguimos rumo à cidade de Cavalcante (GO). Realizamos a última parada na pista de terra da entrada da Cachoeira Poço Encantado. A redução da poluição luminosa no horizonte era perceptível, assim como a presença da mancha da Via Láctea, estrelas e objetos astronômicos no céu. A cortina de poluição luminosa se estendeu até a altura da estrela Teta Carinae (θ Car), aproximadamente 13° acima do horizonte, com magnitude de 3,3. Essa estrela está no centro da imagem próxima a uma nuvem, perto do horizonte, cercada por quatro estrelas.",
+        "info": {
+          "date": "09/06/2024",
+          "timeOfCapture": "00:02 (-3:00 UTC)",
+          "place": {
+            "coordinates": "13°52'00.3\"S 47°15'56.4\"W",
+            "mapsUrl": "https://maps.app.goo.gl/wppSCKyMtywcrJ1f9"
+          }
+        }
+      }
+    }
   },
   "aboutUs": {
     "title": "Sobre nós",
